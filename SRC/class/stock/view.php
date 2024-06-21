@@ -112,7 +112,8 @@ function subStockView($param)
 			</table>
 		</div>
 
-		<input type="image" src="./images/btn_search.png" onclick="form.act.value='stockEditComplete';form.submit();" />
+		<!-- 修正前　<input type="image" src="./images/btn_search.png" onclick="form.act.value='stockEditComplete';form.submit();" /> -->
+		<input type="image" src="./images/btn_search.png" onclick="form.act.value='stockSearch';form.submit();" />
 
 		<hr />
 
@@ -134,7 +135,7 @@ function subStockView($param)
 			<table border="0" cellpadding="5" cellspacing="1">
 				<tr>
 					<th class="list_head">担当<?php fnOrder('CHARGE', 'stockSearch') ?></th>
-					<th class="list_head">ランク<?php fnOrder('RANK', 'stockSearch') ?></th>
+					<th class="list_head">ランク<?php fnOrder('`RANK`', 'stockSearch') ?></th>
 					<th class="list_head">日付<?php fnOrder('INSDT', 'stockSearch') ?></th>
 					<th class="list_head">物件名<?php fnOrder('ARTICLE', 'stockSearch') ?></th>
 					<th class="list_head">部屋<?php fnOrder('ROOM', 'stockSearch') ?></th>
@@ -377,19 +378,11 @@ function subStockEditView($param)
 			<tr>
 				<th>仕入経緯</th>
 				<td>
-<<<<<<< ours
-					<!-- 修正前 <//?php
-							for ($i = 0; $i < 6; $i++) {
-							?>
+					<!-- 修正前 <//?php for ($i=0; $i < 6; $i++) { ?>
 						<br />
-						<input type="radio" name="how" value="<\\?php print $i + 1; ?>" <\\?php if ($param["how"] == $i) print ' checked="checked"'; ?> /> <\\?php print fnHowName($i); ?>
+						<input type="radio" name="how" value="<\\?php print $i + 1; ?>" <\\?php if ($param["how"]==$i) print ' checked="checked"' ; ?> /> <\\?php print fnHowName($i); ?>
 
-					<\\?php
-							}
-					?> -->
-=======
-							}
->>>>>>> theirs
+							<\\?php } ?> -->
 					<?php
 					if (!$param["stockNo"]) {
 						$param["how"] = 1;
@@ -408,7 +401,7 @@ function subStockEditView($param)
 				</td>
 			</tr>
 
-		</table>
+		</table>S
 
 		<a href="javascript:fnStockEditCheck();"><img src="./images/<?php print $param["btnImage"] ?>" /></a>　
 		<a href="javascript:form.act.value='stockEditComplete';form.submit();"><img src="./images/btn_return.png" /></a>
