@@ -3,7 +3,8 @@
 //
 function fnTradeEditCheck() {
 	tmp = form.name.value;
-	if (tmp.length < 0) {
+	// 修正前　if (tmp.length < 0) {
+	if (tmp.length == 0) {
 		alert('業者名を入力してください');
 		return;
 	}
