@@ -19,7 +19,8 @@ function subArticle()
 	$orderTo = $_REQUEST['orderTo'];
 	$sPage   = $_REQUEST['sPage'];
 
-	if ($sDel = '') {
+	// if ($sDel = '') {
+	if ($sDel == '') {
 		$sDel = 1;
 	}
 
