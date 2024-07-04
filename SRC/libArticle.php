@@ -225,17 +225,17 @@ function subArticleEdit()
 		<table border="0" cellpadding="5" cellspacing="1">
 			<tr>
 				<th>除外</th>
-				<?php if ($articleNo) { ?>
+				<!-- <//?php if ($articleNo) { ?>
 					<td>
 						<input type="checkbox" name="del" value="1" checked="checked" /> 非除外
-						<input type="checkbox" name="del" value="0" <?php if ($del == '0') print ' checked="checked"' ?> /> 除外
+						<input type="checkbox" name="del" value="0" <//?php if ($del == '0') print ' checked="checked"' ?> /> 除外
 					</td>
-				<?php } else { ?>
-					<td>
-						<input type="radio" name="del" value="1" checked="checked" /> 非除外
-						<input type="radio" name="del" value="0" <?php if ($del == '0') print ' checked="checked"' ?> /> 除外
-					</td>
-				<?php } ?>
+				<//?php } else { ?> -->
+				<td>
+					<input type="radio" name="del" value="1" checked="checked" /> 非除外
+					<input type="radio" name="del" value="0" <?php if ($del == '0') print ' checked="checked"' ?> /> 除外
+				</td>
+				<!-- <//?php } ?> -->
 			</tr>
 			<tr>
 				<th>物件名<span class="red">（必須）</span></th>
