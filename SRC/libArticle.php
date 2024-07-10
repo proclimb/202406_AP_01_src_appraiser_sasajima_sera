@@ -309,16 +309,16 @@ function subArticleEditComplete()
 	$orderTo = $_REQUEST['orderTo'];
 	$sPage   = $_REQUEST['sPage'];
 
-	$articleNo   = $_REQUEST["ARTICLENO"];
-	$article     = $_REQUEST["ARTICLE"];
-	$room        = $_REQUEST["ROOM"];
-	$keyPlace    = $_REQUEST["KEYPLACE"];
-	$address     = $_REQUEST["ADDRESS"];
-	$articleNote = $_REQUEST["ARTICLENOTE"];
-	$keyBox      = $_REQUEST["KEYBOX"];
-	$drawing     = $_REQUEST["DRAWING"];
-	$sellCharge  = $_REQUEST["SELLCHARGE"];
-	$del         = $_REQUEST["DEL"];
+	$articleNo   = $_REQUEST['articleNo'];
+	$article     = $_REQUEST['article'];
+	$room        = $_REQUEST['room'];
+	$keyPlace    = $_REQUEST['keyPlace'];
+	$address     = $_REQUEST['address'];
+	$articleNote = $_REQUEST['articleNote'];
+	$keyBox      = $_REQUEST['keyBox'];
+	$drawing     = $_REQUEST['drawing'];
+	$sellCharge  = $_REQUEST['sellCharge'];
+	$del         = $_REQUEST['del'];
 
 	// $articleNo   = htmlspecialchars($_REQUEST["ARTICLENO"]);
 	// $article     = htmlspecialchars($_REQUEST["ARTICLE"]);
